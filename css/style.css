@@ -11,49 +11,97 @@
 body {
   /* background-color: red; */
   font-family: "roboto";
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #ffe2b7;
+}
+h1 {
+  font-size: 5em;
+  color: white;
+  padding: 250px 0 0 24px;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+  font-family: "anton";
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.7em;
+  color: #a79581;
+}
+
+h3 {
+  color: #a79581;
+  text-transform: uppercase;
+  font-family: "anton";
+  font-size: 1.5em;
+  line-height: 1.5em;
+  letter-spacing: 0.4em;
+  text-align: left;
+  padding: 48px 0;
+}
+p {
+  max-width: 480px;
+}
+p,
+h4 {
+  padding-left: 48px;
+  letter-spacing: 0.05em;
 }
 article {
   display: flex;
   flex-flow: row wrap;
-  width: 1024px;
-  margin: auto;
+  /* width: 20%; */
+  margin: 0 auto;
 }
 article h2 {
   display: none;
 }
 
 article section {
-  width: 500px;
-  height: 500px;
-  border-left: 12px solid rgba(0, 0, 0, 0.5);
-  margin: 24px;
+  width: 100%;
+  padding: 24px;
 }
-/* article section:nth-child(2n) {
-  background-color: aqua;
-} */
-article section:nth-child(2) {
-  background-color: rgb(251, 151, 19);
+
+article section:nth-child(2n + 1) {
+  background-color: #a79581;
+  color: white;
+}
+
+article section:nth-child(2n + 1) h3 {
+  color: white;
+}
+
+article section:nth-child(2n) {
+  background-color: white;
+  color: #a79581;
 }
 
 article section:nth-child(3) {
-  background-color: rgb(251, 100, 19);
+  background: url(../img/startup-594090_1920.jpg) no-repeat 0px -20px;
+}
+.cv-list li {
+  padding: 12px 0;
 }
 
-article section:nth-child(4) {
-  background-color: rgb(19, 250, 174);
-}
-
-article section:nth-child(5) {
-  background-color: rgb(19, 200, 174);
-}
-
-h3 {
+#skills li {
   color: white;
-  text-transform: uppercase;
-  font-family: "anton";
-  font-size: 3em;
-  letter-spacing: 0.4em;
+  display: inline-block;
+  border: 2px solid #a79581;
+  padding: 6px;
+  margin: 2px;
+  border-radius: 20px;
+  background-color: #a79581;
+}
+
+#competences,
+#competences h3,
+#interets,
+#interets h3 {
   text-align: center;
-  padding: 32px 0;
+}
+#interets p {
+  margin: 0 auto;
 }
