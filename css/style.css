@@ -13,34 +13,47 @@ body {
   font-family: "roboto";
   font-size: 18px;
   line-height: 24px;
-  background-color: #ffe2b7;
+  background-color: #35353f;
 }
-h1 {
-  font-size: 5em;
-  color: white;
-  padding: 250px 0 0 24px;
-}
-h1,
-h2 {
-  text-transform: uppercase;
-  font-family: "anton";
-  letter-spacing: 0.2em;
-  text-align: center;
-}
-h2 {
-  font-size: 1.7em;
-  color: #a79581;
+#nav {
+  background-color: rgba(0, 0, 0, 0.808);
+  display: flex;
+  justify-content: center;
 }
 
-h3 {
-  color: #a79581;
+#nav li {
+  padding: 24px 0;
+}
+#nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 25px;
+}
+#nav li a:hover {
+  background-color: #35353f;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-family: "anton";
+  padding: 24px;
+  text-align: center;
+  color: white;
+}
+h2 {
   font-size: 1.5em;
-  line-height: 1.5em;
-  letter-spacing: 0.4em;
-  text-align: left;
-  padding: 48px 0;
+  padding-bottom: 12px;
+  text-align: center;
+  color: #a79581;
+}
+h3 {
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #a79581;
+  padding-bottom: 24px;
 }
 p {
   max-width: 480px;
@@ -53,8 +66,8 @@ h4 {
 article {
   display: flex;
   flex-flow: row wrap;
-  /* width: 20%; */
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 article h2 {
   display: none;
@@ -66,7 +79,7 @@ article section {
 }
 
 article section:nth-child(2n + 1) {
-  background-color: #a79581;
+  /* background-color: rgba(255, 255, 255, 0.301); */
   color: white;
 }
 
@@ -81,6 +94,7 @@ article section:nth-child(2n) {
 
 article section:nth-child(3) {
   background: url(../img/startup-594090_1920.jpg) no-repeat 0px -20px;
+  width: 100%;
 }
 .cv-list li {
   padding: 12px 0;
@@ -89,11 +103,11 @@ article section:nth-child(3) {
 #skills li {
   color: white;
   display: inline-block;
-  border: 2px solid #a79581;
-  padding: 6px;
+  /* border: 2px solid #35353f; */
+  padding: 6px 12px;
   margin: 2px;
-  border-radius: 20px;
-  background-color: #a79581;
+  border-radius: 25px;
+  background-color: #35353f;
 }
 
 #competences,
@@ -104,4 +118,11 @@ article section:nth-child(3) {
 }
 #interets p {
   margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
 }
