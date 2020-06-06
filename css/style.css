@@ -7,6 +7,7 @@
   font-family: "roboto";
   src: url(../font/Roboto/Roboto-Regular.ttf);
 }
+/*  HEAD  */
 
 body {
   font-family: "roboto";
@@ -80,11 +81,25 @@ h3 {
   padding-bottom: 24px;
   text-align: center;
 }
+/*  MAIN */
+
+.media {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+.media li {
+  padding: 6px;
+}
+.media li a {
+  font-size: 2em;
+  color: white;
+}
 
 article {
   display: flex;
   flex-flow: row wrap;
-  padding-bottom: 50px;
+
   padding-top: 600px;
 }
 article h2 {
@@ -126,6 +141,16 @@ article section {
   padding: 0;
 }
 
+/*  END  */
+footer {
+  background-color: #bbc080;
+  text-align: center;
+  padding: 24px;
+  color: #2f2f2f;
+}
+footer .media li a {
+  color: #2f2f2f;
+}
 @media screen and (max-width: 1024px) {
   body {
     font-size: 16px;
