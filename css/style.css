@@ -182,4 +182,8 @@ footer > p a:hover {
     letter-spacing: 0.02em;
     font-size: 0.5em;
   }
+
+  header img {
+    background-image: url("../img/forest-931706_640.jpg");
+  }
 }
