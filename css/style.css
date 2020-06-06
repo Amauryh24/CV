@@ -186,4 +186,10 @@ footer > p a:hover {
   header img {
     background-image: url("../img/forest-931706_640.jpg");
   }
+  #interets p {
+    font-size: 1.2em;
+  }
+  #contact p {
+    font-size: 0.9em;
+  }
 }
