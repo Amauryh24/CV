@@ -9,18 +9,25 @@
 }
 
 body {
-  /* background-color: red; */
   font-family: "roboto";
   font-size: 18px;
   line-height: 24px;
-  background-color: #35353f;
+  color: #b1b1b194;
+  letter-spacing: 0.025em;
 }
-#nav {
-  background-color: rgba(0, 0, 0, 0.808);
-  display: flex;
-  justify-content: center;
+header img {
+  width: 100%;
+  object-fit: contain;
+  z-index: -1;
+  position: fixed;
 }
 
+#nav {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
 #nav li {
   padding: 24px 0;
 }
@@ -28,82 +35,79 @@ body {
   text-decoration: none;
   color: #ffffff;
   padding: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 #nav li a:hover {
-  background-color: #35353f;
+  border-bottom: 3px solid white;
+  font-weight: bold;
 }
-
+header div {
+  position: absolute;
+  top: 250px;
+  right: 50%;
+  transform: translate(50%, 0px);
+  background-color: #2f2f2fcc;
+  padding: 24px;
+}
+header div p {
+  max-width: 100%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
 h1 {
   font-size: 2em;
   line-height: 2em;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
-  padding: 24px;
-  text-align: center;
   color: white;
+  text-align: center;
 }
+
 h2 {
   font-size: 1.5em;
-  padding-bottom: 12px;
+  line-height: 1.5em;
+  color: white;
+  opacity: 0.8;
   text-align: center;
-  color: #a79581;
 }
 h3 {
   font-size: 1.2em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #a79581;
+  color: #91a778;
   padding-bottom: 24px;
+  text-align: center;
 }
-p {
-  max-width: 480px;
-}
-p,
-h4 {
-  padding-left: 48px;
-  letter-spacing: 0.05em;
-}
+
 article {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 auto;
   padding-bottom: 50px;
+  padding-top: 600px;
 }
 article h2 {
   display: none;
 }
-
 article section {
   width: 100%;
   padding: 24px;
+  background-color: #2f2f2f;
+  margin: 1px 0;
 }
-
-article section:nth-child(2n + 1) {
-  /* background-color: rgba(255, 255, 255, 0.301); */
-  color: white;
-}
-
-article section:nth-child(2n + 1) h3 {
-  color: white;
-}
-
-article section:nth-child(2n) {
-  background-color: white;
-  color: #a79581;
-}
-
-article section:nth-child(3) {
-  background: url(../img/startup-594090_1920.jpg) no-repeat 0px -20px;
-  width: 100%;
+.cv-list {
+  max-width: 540px;
+  margin: 0 auto;
 }
 .cv-list li {
-  padding: 12px 0;
+  margin: 12px 0;
+  padding: 0 24px;
+  border-left: 3px solid #91a778;
 }
 
 #skills li {
   color: white;
   display: inline-block;
-  /* border: 2px solid #35353f; */
   padding: 6px 12px;
   margin: 2px;
   border-radius: 25px;
